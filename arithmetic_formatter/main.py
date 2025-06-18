@@ -3,14 +3,32 @@
 def add_operation(problem_list, num1, num2, operator):
     problem_list.append({'num1': num1, 'num2': num2, 'operator': operator})
 
-def print_problems(problem_list):
-    for problem in problem_list:
-        length = max(len(problem['num1']), len(problem['num2'])) + 2
-        print(f"{problem['num1']:>{length}}")
-        print(f"{problem['operator']}{problem['num2']:>{length - 1}}")
-        print(f"-" * length)
+def print_problems(problem_list, show_answer):
 
-def rules(problem_list):
+    if show_answer == False:
+        for problem in problem_list:
+            length = max(len(problem['num1']), len(problem['num2'])) + 2
+            print(f"{problem['num1']:>{length}}")
+            print(f"{problem['operator']}{problem['num2']:>{length - 1}}")
+            print(f"-" * length)
+            print()
+    else:
+        for problem in problem_list:
+            length = max(len(problem['num1']), len(problem['num2'])) + 2
+            print(f"{problem['num1']:>{length}}")
+            print(f"{problem['operator']}{problem['num2']:>{length - 1}}")
+            print(f"-" * length)
+            # se realiza el calculo de requerido segun sea la operacion
+            number1 = int(problem['num1'])
+            number2 = int(problem['num2'])
+            if problem['operator'] == '+':
+                total = number1 + number2
+                print(f'{total:>{length}}\n')
+            elif problem['operator'] == '-':
+                total = number1 - number2
+                print(f'{total:>{length}}\n')
+
+def rules(problem_list, show_answer):
     if len(problem_list) > 5:
         print('Error: Too many problems.')
         return
@@ -24,20 +42,7 @@ def rules(problem_list):
         elif len(problem['num1']) > 4 or len(problem['num2']) > 4:
             print('Error: Numbers cannot be more than four digits.')
             return
-    print_problems(problem_list)
-
-def answer(problem_list):
-
-    for problem in problem_list:
-        number1 = int(problem['num1'])
-        number2 = int(problem['num2'])
-        if problem['operator'] == '+':
-            total = number1 + number2
-            return total
-        elif problem['operator'] == '-':
-            total = number1 - number2
-            return total
-# En este punto estoy pensando como agregar esta funcion en print_problems
+    print_problems(problem_list, show_answer)
 
 def is_operator(char):
     operators = {'+', '-', '*', '/'}
@@ -65,9 +70,6 @@ def arithmetic_arranger(problems, show_answers=True):
     problem_list = []
     for problem in problems:
         assign_elements(problem, problem_list)
-    if show_answers == False:
-        return rules(problem_list)
-    else:
-        return answer(problem_list)
+    return rules(problem_list, show_answers)
 
 print(f'\n{arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49", "3801 - 2"])}')
