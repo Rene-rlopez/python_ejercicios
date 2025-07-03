@@ -2,17 +2,17 @@
 
 ## import
 
-### re: 
-A regular expression, or regex, is a pattern used to match a specific combination of characters inside a string. It is a valid alternative to if/else conditional statements when you need to match or find patterns inside a string for validation purposes, character replacement, and others.  
-
-- **compile()**: The compile() function from the re module compiles the string passed as the argument into a regular expression object that can be used by other re methods.
-- **search()**: The search() function from the re module analyzes the string passed as the argument looking for the first place where the regex pattern matches the string.
-- **findall()**: It's similar to search but it returns a list with all the occurrences of the matched pattern.
-- **Character class**: is indicated by square brackets and matches one character among those specified between the brackets. For example, ma[dnt] matches either mad, man, or mat.
-- **all()**: is a built-in Python function that returns True if all the elements inside a given iterable evaluate to True. Otherwise, it returns False.
-- **Generator expressions**: A Generator expressions follow the syntax of list comprehensions but they use parentheses instead of square brackets. Memory can be saved by using a generator expression.
-- **secrets**: Generador seguro de números aleatorios.
-- **string**: Provee conjuntos como ascii_letters, digits y punctuation.
+1. **re:** 
+	A regular expression, or regex, is a pattern used to match a specific combination of characters inside a string. It is a valid alternative to if/else conditional statements when you need to match or find patterns inside a string for validation purposes, character replacement, and others.  
+	
+	- **compile()**: The compile() function from the re module compiles the string passed as the argument into a regular expression object that can be used by other re methods.
+	- **search()**: The search() function from the re module analyzes the string passed as the argument looking for the first place where the regex pattern matches the string.
+	- **findall()**: It's similar to search but it returns a list with all the occurrences of the matched pattern.
+	- **Character class**: is indicated by square brackets and matches one character among those specified between the brackets. For example, ma[dnt] matches either mad, man, or mat.
+	- **all()**: is a built-in Python function that returns True if all the elements inside a given iterable evaluate to True. Otherwise, it returns False.
+	- **Generator expressions**: A Generator expressions follow the syntax of list comprehensions but they use parentheses instead of square brackets. Memory can be saved by using a generator expression.
+2. **secrets:** Generador seguro de números aleatorios.
+3. **string:** Provee conjuntos como ascii_letters, digits y punctuation.
 
 
 ## Raw string
