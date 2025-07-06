@@ -642,5 +642,8 @@ With that, your cipher project is complete.
 </div>
 <br>
 <div align="center">
-    <img src="https://img.shields.io/badge/freeCodeCamp-Python-FFD43B?style=for-the-badge&logo=freecodecamp&logoColor=white&labelColor=0A0A23&logoWidth=20" alt="freeCodeCamp + Python">
+    <img src="https://img.shields.io/badge/freeCodeCamp-Python-FFD43B?style=for-the-badge&logo=freecodecamp&logoColor=white&labelColor=0A0A23&logoWidth=20" alt="freeCodeCamp + Python"
+    alt="freeCodeCamp+Python"
+    draggable="false" 
+    style="pointer-events: none; user-select: none;">
 </div>
