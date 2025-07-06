@@ -637,4 +637,10 @@ Wait a minute! You cannot decrypt anything with the wrong key. Try with 'happyco
 With that, your cipher project is complete.
 
 
-[^1]: Origen del ejercicio: freecodecamp
+<div align="center">
+  <small>Practice material taken from: <a href="https://freecodecamp.org" target="_blank">freeCodeCamp.org</a></small>
+</div>
+<br>
+<div align="center">
+    <img src="https://img.shields.io/badge/freeCodeCamp-Python-FFD43B?style=for-the-badge&logo=freecodecamp&logoColor=white&labelColor=0A0A23&logoWidth=20" alt="freeCodeCamp + Python">
+</div>
