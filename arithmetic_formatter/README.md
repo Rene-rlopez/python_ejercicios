@@ -16,3 +16,19 @@ informacion correcta
 - tiene que haber guiones abajo de cada problema, los guiones los guiones tienen que tener el mismo largo de cada problema individualmente
 
 segun la funcion arithmetic_arranger, debo de utilizar una funcion lambda con el argumento problem y utilizar la funcion map para iterar en la lista problems
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+---
+
+<div align="center">
+  <small>Practice material taken from: <a href="https://freecodecamp.org" target="_blank">freeCodeCamp.org</a></small>
+</div>
+<br>
+<div align="center">
+    <img src="https://img.shields.io/badge/freeCodeCamp-Python-FFD43B?style=for-the-badge&logo=freecodecamp&logoColor=white&labelColor=0A0A23&logoWidth=20" alt="freeCodeCamp + Python"
+    alt="freeCodeCamp+Python"
+    draggable="false" 
+    style="pointer-events: none; user-select: none;">
+</div>
